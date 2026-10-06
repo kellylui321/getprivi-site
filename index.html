@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f8f9fc">
+  <meta name="description" content="Privi is building a privacy-conscious way for Hong Kong law firms to use AI. Review what the model receives before you send it.">
+  <link rel="canonical" href="https://getprivi.ai/">
+  <title>Privi AI — See what leaves. Before it leaves.</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="shell header-inner">
+      <a class="brand" href="#top" aria-label="Privi AI home">
+        <svg class="brand-mark" viewBox="0 0 32 32" fill="none" aria-hidden="true"><path d="M16 3.5 27 8v8.5c0 6.5-4.3 10.3-11 12.5-6.7-2.2-11-6-11-12.5V8l11-4.5Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="m11 16.2 3.2 3.2 6.8-7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <span>Privi <span class="brand-accent">AI</span></span>
+      </a>
+      <nav aria-label="Main navigation">
+        <a href="#how-it-works">How it works</a>
+        <a href="#privacy">Privacy</a>
+        <a href="#status">Where we are</a>
+      </nav>
+      <span class="header-location">Built for Hong Kong</span>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero shell" id="top" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="eyebrow-dot"></span> LEGAL AI, WITH A REVIEW STEP</div>
+        <h1 id="hero-title">See what leaves.<br><em>Before it leaves.</em></h1>
+        <p class="hero-lead">Privi helps you replace sensitive details with pseudonyms, inspect the text an AI model will receive, and decide when to send it. Your answer can show the real details again on your device.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#how-it-works">See how it works <span aria-hidden="true">↗</span></a>
+          <span class="hero-note">Desktop product in development</span>
+        </div>
+      </div>
+
+      <div class="demo-card" aria-label="Illustration of Privi's masking review">
+        <div class="demo-topline">
+          <span class="demo-kicker">A look inside the review step</span>
+          <span class="status-pill"><span aria-hidden="true">●</span> Review before send</span>
+        </div>
+        <div class="demo-grid">
+          <div class="demo-panel">
+            <div class="panel-heading">YOUR DRAFT <span>Stays visible to you</span></div>
+            <p>Draft a letter for <mark class="person">Wong Tai Sin</mark> about the unpaid invoice. His HKID is <mark class="id">A123456(3)</mark>. Reply to <mark class="email">wong@example.com</mark>.</p>
+          </div>
+          <div class="demo-panel model-panel">
+            <div class="panel-heading">MODEL RECEIVES <span>After approval</span></div>
+            <p>Draft a letter for <span class="token person">[Person A]</span> about the unpaid invoice. His HKID is <span class="token id">[HKID-1]</span>. Reply to <span class="token email">[Email-1]</span>.</p>
+          </div>
+        </div>
+        <div class="demo-foot"><span aria-hidden="true">ⓘ</span> Illustrative example. In the current prototype, you select names to mask; structured identifiers are detected automatically.</div>
+      </div>
+      <div class="hero-caption">The important moment is the one before sending.</div>
+    </section>
+
+    <section class="section section-tint" id="how-it-works" aria-labelledby="how-title">
+      <div class="shell">
+        <div class="section-intro">
+          <p class="section-label">THE FLOW</p>
+          <h2 id="how-title">Three steps. You control the middle one.</h2>
+          <p>Privi puts a visible checkpoint between your draft and the model.</p>
+        </div>
+        <div class="steps">
+          <article class="step">
+            <div class="step-number">01 <span class="step-rule"></span></div>
+            <div class="step-icon" aria-hidden="true"><span class="mini-sheet"><i></i><i></i><i></i></span><span class="mini-scan"></span></div>
+            <h3>Prepare your draft</h3>
+            <p>The prototype detects HKID numbers, phone numbers and email addresses in text on your device. You can select other details, such as a person’s name, to mask them yourself.</p>
+          </article>
+          <article class="step">
+            <div class="step-number">02 <span class="step-rule"></span></div>
+            <div class="step-icon two-sheets" aria-hidden="true"><span class="mini-sheet"><i></i><i></i><i></i></span><span class="mini-arrow">→</span><span class="mini-sheet"><i></i><i></i><i></i></span></div>
+            <h3>Review the exact text</h3>
+            <p>Compare your source with the masked version. Add a mask when something was missed. Everything not highlighted is sent as written, so this review matters.</p>
+          </article>
+          <article class="step">
+            <div class="step-number">03 <span class="step-rule"></span></div>
+            <div class="step-icon reply-icon" aria-hidden="true"><span class="mini-sheet"><i></i><i></i><i></i></span><span class="reply-spark">✦</span></div>
+            <h3>Approve, then read</h3>
+            <p>Only after approval does the demo send the masked text to an AI model. Pseudonyms in the reply are restored locally, and you can switch back to see the model’s words.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section shell privacy-section" id="privacy" aria-labelledby="privacy-title">
+      <div class="privacy-heading">
+        <p class="section-label">CLEAR BY DESIGN</p>
+        <h2 id="privacy-title">Know the boundary.</h2>
+        <p>Masking makes AI use more deliberate. It does not turn every document into safe text automatically.</p>
+      </div>
+      <div class="privacy-list">
+        <div class="privacy-row"><span class="row-index">01</span><div><h3>What the model gets</h3><p>The text you approve, with highlighted details replaced by pseudonyms. Unhighlighted facts, dates, amounts and legal language go through as written.</p></div></div>
+        <div class="privacy-row"><span class="row-index">02</span><div><h3>What the prototype does today</h3><p>Masking and restoration run in the browser. The current demo sends approved masked text through a local development proxy to an AI provider. It is a prototype, not yet a product for live client matters.</p></div></div>
+        <div class="privacy-row"><span class="row-index">03</span><div><h3>What requires your judgment</h3><p>Automatic detection can miss sensitive details. Review every outgoing word before approving it. This is not a substitute for legal review or formal redaction.</p></div></div>
+      </div>
+    </section>
+
+    <section class="section status-section" id="status" aria-labelledby="status-title">
+      <div class="shell status-inner">
+        <div>
+          <p class="section-label">WHERE WE ARE</p>
+          <h2 id="status-title">Built for small firms.<br>Still being built.</h2>
+          <p>Privi is being developed for boutique law firms in Hong Kong. The working browser prototype tests the central idea: show the user what the model will see before anything is sent.</p>
+          <p>The desktop app, document review, saved matters and automatic detection of names and companies are next-stage work. We’ll update this site as those capabilities become real.</p>
+        </div>
+        <aside class="status-card" aria-label="Product development status">
+          <div class="status-card-header">PRODUCT STATUS <span>CURRENT STAGE</span></div>
+          <div class="status-item"><span class="status-icon done" aria-hidden="true">✓</span><div><strong>Working prototype</strong><small>Text masking, review and AI response</small></div></div>
+          <div class="status-item"><span class="status-icon underway" aria-hidden="true">↗</span><div><strong>In development</strong><small>Desktop app and fuller local detection</small></div></div>
+          <div class="status-item"><span class="status-icon planned" aria-hidden="true">○</span><div><strong>Planned</strong><small>Document review and matter storage</small></div></div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell footer-inner"><span class="footer-brand">Privi <b>AI</b></span><span>Privacy begins with seeing what you send.</span><span>Hong Kong · In development</span></div>
+  </footer>
+</body>
+</html>
