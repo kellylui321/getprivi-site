@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 176 108" width="176" height="108" fill="none" style="color:#cbd3e2;--border-strong:#D3D6DE;--entity-person-source-bg:#C9D8F7;--entity-person-bg:#E9EEFB;--entity-id-source-bg:#FFE2B8;--accent:#3263D8;">
+            <rect x="1" y="1" width="174" height="106" rx="9" stroke="currentColor" stroke-width="1.4" stroke-dasharray="5 5"></rect>
+            <rect x="20" y="22" width="64" height="64" rx="5" stroke="var(--border-strong)" stroke-width="1.5"></rect>
+            <rect x="92" y="22" width="64" height="64" rx="5" stroke="var(--border-strong)" stroke-width="1.5"></rect>
+            <rect x="30" y="36" width="30" height="9" rx="3" fill="var(--entity-person-source-bg)"></rect>
+            <line x1="30" y1="56" x2="74" y2="56" stroke="var(--border-strong)" stroke-width="1.5" stroke-linecap="round"></line>
+            <line x1="30" y1="70" x2="62" y2="70" stroke="var(--border-strong)" stroke-width="1.5" stroke-linecap="round"></line>
+            <rect x="102" y="36" width="30" height="9" rx="3" fill="var(--entity-person-bg)"></rect>
+            <line x1="102" y1="56" x2="146" y2="56" stroke="var(--border-strong)" stroke-width="1.5" stroke-linecap="round"></line>
+            <line x1="102" y1="70" x2="134" y2="70" stroke="var(--border-strong)" stroke-width="1.5" stroke-linecap="round"></line>
+            <path d="M84 54h8" stroke="var(--accent)" stroke-width="1.6" stroke-linecap="round"></path>
+          </svg>

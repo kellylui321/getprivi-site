@@ -4,9 +4,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#f8f9fc">
-  <meta name="description" content="Privi is building a privacy-conscious way for Hong Kong law firms to use AI. Review what the model receives before you send it.">
+  <meta name="description" content="Privi masks sensitive details on your machine and shows you exactly what the AI will see before you send it. Built for boutique law firms in Hong Kong.">
   <link rel="canonical" href="https://getprivi.ai/">
-  <title>Privi AI — See what leaves. Before it leaves.</title>
+  <title>Privi AI — Your client's name never leaves your laptop.</title>
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
   <link rel="stylesheet" href="styles.css">
 </head>
@@ -22,7 +22,7 @@
       <nav aria-label="Main navigation">
         <a href="#how-it-works">How it works</a>
         <a href="#privacy">Privacy</a>
-        <a href="#status">Where we are</a>
+        <a href="#status">For small firms</a>
       </nav>
       <span class="header-location">Built for Hong Kong</span>
     </div>
@@ -31,60 +31,59 @@
   <main id="main">
     <section class="hero shell" id="top" aria-labelledby="hero-title">
       <div class="hero-copy">
-        <div class="eyebrow"><span class="eyebrow-dot"></span> LEGAL AI, WITH A REVIEW STEP</div>
-        <h1 id="hero-title">See what leaves.<br><em>Before it leaves.</em></h1>
-        <p class="hero-lead">Privi helps you replace sensitive details with pseudonyms, inspect the text an AI model will receive, and decide when to send it. Your answer can show the real details again on your device.</p>
+        <div class="eyebrow"><span class="eyebrow-dot"></span> PRIVI AI · HONG KONG</div>
+        <h1 id="hero-title">Your client's name never leaves <em>your laptop.</em></h1>
+        <p class="hero-lead">Privi masks names, ID numbers and addresses on your machine, shows you exactly what's about to be sent, and only then passes it to the AI. You see the real names in the answer. The model never does.</p>
         <div class="hero-actions">
           <a class="button button-primary" href="#how-it-works">See how it works <span aria-hidden="true">↗</span></a>
-          <span class="hero-note">Desktop product in development</span>
+          <span class="hero-note">Built for boutique firms in Hong Kong. Desktop app, coming soon.</span>
         </div>
       </div>
 
+      <div class="demo-intro">
+        <h2>You decide what the model sees.</h2>
+        <p>On the left is what you wrote. On the right is what leaves your computer.</p>
+      </div>
       <div class="demo-card" aria-label="Illustration of Privi's masking review">
         <div class="demo-topline">
-          <span class="demo-kicker">A look inside the review step</span>
-          <span class="status-pill"><span aria-hidden="true">●</span> Review before send</span>
+          <span class="status-pill"><span aria-hidden="true">●</span> Masking on · 4 entities</span>
+          <span class="demo-kicker">Runs on your machine</span>
         </div>
         <div class="demo-grid">
           <div class="demo-panel">
-            <div class="panel-heading">YOUR DRAFT <span>Stays visible to you</span></div>
-            <p>Draft a letter for <mark class="person">Wong Tai Sin</mark> about the unpaid invoice. His HKID is <mark class="id">A123456(3)</mark>. Reply to <mark class="email">wong@example.com</mark>.</p>
+            <div class="panel-heading">WHAT YOU WROTE</div>
+            <p>Please review the partnership between <mark class="person">Wong Tai Sin</mark> and <mark class="person">Chan Mei Ling</mark> regarding the property at <mark class="address">Flat 12A, 88 Des Voeux Road</mark>. Wong's HKID is <mark class="id">A123456(7)</mark>.</p>
           </div>
           <div class="demo-panel model-panel">
-            <div class="panel-heading">MODEL RECEIVES <span>After approval</span></div>
-            <p>Draft a letter for <span class="token person">[Person A]</span> about the unpaid invoice. His HKID is <span class="token id">[HKID-1]</span>. Reply to <span class="token email">[Email-1]</span>.</p>
+            <div class="panel-heading">→&nbsp; WHAT THE MODEL RECEIVES</div>
+            <p>Please review the partnership between <span class="token person">[Person A]</span> and <span class="token person">[Person B]</span> regarding the property at <span class="token address">[Address-1]</span>. <span class="token person">[Person A]</span>'s HKID is <span class="token id">[HKID-1]</span>.</p>
           </div>
         </div>
-        <div class="demo-foot"><span aria-hidden="true">ⓘ</span> Illustrative example. In the current prototype, you select names to mask; structured identifiers are detected automatically.</div>
+        <div class="demo-foot">Everything not highlighted is sent as written. This is an illustration of the product vision; nothing on this page is sent to an AI model.</div>
       </div>
-      <div class="hero-caption">The important moment is the one before sending.</div>
     </section>
 
     <section class="section section-tint" id="how-it-works" aria-labelledby="how-title">
       <div class="shell">
         <div class="section-intro">
           <p class="section-label">THE FLOW</p>
-          <h2 id="how-title">Three steps. You control the middle one.</h2>
-          <p>Privi puts a visible checkpoint between your draft and the model.</p>
+          <h2 id="how-title">Three steps, and you control the middle one.</h2>
         </div>
         <div class="steps">
           <article class="step">
-            <div class="step-number">01 <span class="step-rule"></span></div>
-            <div class="step-icon" aria-hidden="true"><span class="mini-sheet"><i></i><i></i><i></i></span><span class="mini-scan"></span></div>
-            <h3>Prepare your draft</h3>
-            <p>The prototype detects HKID numbers, phone numbers and email addresses in text on your device. You can select other details, such as a person’s name, to mask them yourself.</p>
+            <div class="step-icon"><img src="illustration-step-1.svg" width="176" height="108" alt="Document with sensitive details highlighted during a local scan"></div>
+            <h3>1. It scans on your machine.</h3>
+            <p>Your query and any documents you attach are scanned locally for names, companies, ID numbers, addresses and phone numbers. Nothing has left yet.</p>
           </article>
           <article class="step">
-            <div class="step-number">02 <span class="step-rule"></span></div>
-            <div class="step-icon two-sheets" aria-hidden="true"><span class="mini-sheet"><i></i><i></i><i></i></span><span class="mini-arrow">→</span><span class="mini-sheet"><i></i><i></i><i></i></span></div>
-            <h3>Review the exact text</h3>
-            <p>Compare your source with the masked version. Add a mask when something was missed. Everything not highlighted is sent as written, so this review matters.</p>
+            <div class="step-icon"><img src="illustration-step-2.svg" width="176" height="108" alt="Original and masked documents shown side by side"></div>
+            <h3>2. You review what's leaving.</h3>
+            <p>You see your document beside the version the model will receive, line for line. Change what's masked, mask something we missed, or unmask something that isn't sensitive. Nothing is sent until you say so.</p>
           </article>
           <article class="step">
-            <div class="step-number">03 <span class="step-rule"></span></div>
-            <div class="step-icon reply-icon" aria-hidden="true"><span class="mini-sheet"><i></i><i></i><i></i></span><span class="reply-spark">✦</span></div>
-            <h3>Approve, then read</h3>
-            <p>Only after approval does the demo send the masked text to an AI model. Pseudonyms in the reply are restored locally, and you can switch back to see the model’s words.</p>
+            <div class="step-icon"><img src="illustration-step-3.svg" width="176" height="108" alt="Masked text sent to an AI model and pseudonyms returned"></div>
+            <h3>3. Only the masked version goes out.</h3>
+            <p>The AI works with pseudonyms — Person A, Company Alpha. When the answer comes back, we put the real names back in on your machine. You read it normally. The model never saw them.</p>
           </article>
         </div>
       </div>
@@ -92,24 +91,24 @@
 
     <section class="section shell privacy-section" id="privacy" aria-labelledby="privacy-title">
       <div class="privacy-heading">
-        <p class="section-label">CLEAR BY DESIGN</p>
-        <h2 id="privacy-title">Know the boundary.</h2>
-        <p>Masking makes AI use more deliberate. It does not turn every document into safe text automatically.</p>
+        <p class="section-label">PRIVACY, BY DESIGN</p>
+        <h2 id="privacy-title">What we do, and what we don't.</h2>
       </div>
       <div class="privacy-list">
-        <div class="privacy-row"><span class="row-index">01</span><div><h3>What the model gets</h3><p>The text you approve, with highlighted details replaced by pseudonyms. Unhighlighted facts, dates, amounts and legal language go through as written.</p></div></div>
-        <div class="privacy-row"><span class="row-index">02</span><div><h3>What the prototype does today</h3><p>Masking and restoration run in the browser. The current demo sends approved masked text through a local development proxy to an AI provider. It is a prototype, not yet a product for live client matters.</p></div></div>
-        <div class="privacy-row"><span class="row-index">03</span><div><h3>What requires your judgment</h3><p>Automatic detection can miss sensitive details. Review every outgoing word before approving it. This is not a substitute for legal review or formal redaction.</p></div></div>
+        <div class="privacy-row"><span class="row-index">01</span><div><h3>What stays on your machine</h3><p>Entity detection, your documents, your conversation history, and the mapping between real names and pseudonyms. All of it is stored locally. We don't have a copy.</p></div></div>
+        <div class="privacy-row"><span class="row-index">02</span><div><h3>What gets sent</h3><p>The masked text of your query and documents, to the AI model you choose. Legal language, dates and amounts go through as written — the model can't reason about your matter otherwise. That's a deliberate trade-off, and it's worth understanding before you rely on this.</p></div></div>
+        <div class="privacy-row"><span class="row-index">03</span><div><h3>What we can't promise</h3><p>Automated masking isn't the same as legal-grade redaction. Detection is good, not perfect, which is exactly why we show you everything before it's sent and ask you to approve it. A careful read of that screen is part of using this properly.</p></div></div>
+        <div class="privacy-row"><span class="row-index">04</span><div><h3>If the local scanner fails</h3><p>Privi keeps working with pattern matching alone and tells you clearly that detection is reduced. It won't quietly send unmasked text.</p></div></div>
       </div>
     </section>
 
     <section class="section status-section" id="status" aria-labelledby="status-title">
       <div class="shell status-inner">
         <div>
-          <p class="section-label">WHERE WE ARE</p>
-          <h2 id="status-title">Built for small firms.<br>Still being built.</h2>
-          <p>Privi is being developed for boutique law firms in Hong Kong. The working browser prototype tests the central idea: show the user what the model will see before anything is sent.</p>
-          <p>The desktop app, document review, saved matters and automatic detection of names and companies are next-stage work. We’ll update this site as those capabilities become real.</p>
+          <p class="section-label">BUILT FOR BOUTIQUE FIRMS</p>
+          <h2 id="status-title">Built for small firms, not scaled down for them.</h2>
+          <p>Most legal AI tools start at ten seats. Boutique firms in Hong Kong — five people, six, eight — get told to come back when they're bigger, even though they're the ones who'd feel the difference most.</p>
+          <p>Privi is a desktop app with a subscription. No minimum seats, no IT project, no procurement cycle.</p>
         </div>
         <aside class="status-card" aria-label="Product development status">
           <div class="status-card-header">PRODUCT STATUS <span>CURRENT STAGE</span></div>
@@ -122,7 +121,7 @@
   </main>
 
   <footer class="site-footer">
-    <div class="shell footer-inner"><span class="footer-brand">Privi <b>AI</b></span><span>Privacy begins with seeing what you send.</span><span>Hong Kong · In development</span></div>
+    <div class="shell footer-inner"><span class="footer-brand">Privi <b>AI</b></span><span>We're building this now.</span><span>Hong Kong · Desktop app coming soon</span></div>
   </footer>
 </body>
 </html>
